@@ -25,7 +25,6 @@ public class ArrayCharTest {
         assertEquals(0, arrayChar1.compareTo(arrayChar3));
         assertEquals(-1, arrayChar1.compareTo(arrayChar4));
         assertEquals(1, arrayChar4.compareTo(arrayChar1));
-        //
     }
 
     @Test
@@ -74,6 +73,8 @@ public class ArrayCharTest {
         assertEquals(11, arrayChar1.compareToIgnoreCase(arrayChar3));
         assertEquals(4, arrayChar1.compareToIgnoreCase(arrayChar4));
         assertEquals(-4, arrayChar4.compareToIgnoreCase(arrayChar1));
+        assertEquals(-21,new ArrayChar(new char[]{'L'}).compareToIgnoreCase(new ArrayChar(new char[]{'a'})));
+        assertTrue(new ArrayChar(new char[]{'L'}).compareToIgnoreCase(new ArrayChar(new char[]{'a'})) < 0);
     }
 
     //    1.3
