@@ -53,7 +53,7 @@ public class ArrayChar {
             char second = Character.toLowerCase(arrayChar.array[index]);
 
             if (first != second) {
-                return this.array[index] - arrayChar.array[index];
+                return Character.toLowerCase(array[index]) - Character.toLowerCase(arrayChar.array[index]);
             }
         }
         return this.array.length - arrayChar.array.length;
